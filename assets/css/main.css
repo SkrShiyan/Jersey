@@ -1862,7 +1862,7 @@ section,
 
 
 /* Responsive Design */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .card-3d {
       width: 100%;
       height: 250px;
@@ -1874,5 +1874,26 @@ section,
   .card-3d div {
       width: 120px;
       height: 160px;
+  }
+} */
+
+@media (max-width: 768px) {
+  .card-3d {
+      width: 100%;
+      height: 220px; /* Slightly reduced height */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px; /* Reduce space between cards */
+  }
+
+  .card-3d div {
+      width: 110px; /* Slightly smaller */
+      height: 150px;
+      margin: 0; /* Remove extra margins */
+  }
+
+  .hero-section {
+      padding: 20px 10px; /* Reduce padding */
   }
 }
