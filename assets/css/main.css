@@ -1707,6 +1707,7 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
 /* Centering the button */
 .design-button-container {
   display: flex;
@@ -1895,5 +1896,100 @@ section,
 
   .hero-section {
       padding: 20px 10px; /* Reduce padding */
+  }
+}
+
+
+
+/* Card container to arrange multiple cards */
+.neydesign-card-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 cards in a row on PC */
+  gap: 20px;
+  max-width: 1400px;
+  width: 100%;
+}
+
+/* Individual card styling */
+.neydesign-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.neydesign-card:hover {
+  transform: scale(1.05);
+}
+
+/* Product image */
+.neydesign-product-img {
+  width: 100%;
+  max-width: 180px;
+  margin-bottom: 10px;
+}
+
+/* Product title */
+.neydesign-product-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+/* Product description */
+.neydesign-product-desc {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Product price */
+.neydesign-product-price {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #0099cc;
+}
+
+/* Buy Now button */
+.neydesign-buy-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background 0.3s;
+  cursor: pointer;
+  background-color: #121212; /* Brand color */
+  color: white;
+  border: none;
+}
+
+.neydesign-buy-btn:hover {
+  background-color: #0f0f0f;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .neydesign-card-container {
+      grid-template-columns: repeat(3, 1fr); /* 3 cards in a row on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .neydesign-card-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards in a row on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .neydesign-card-container {
+      grid-template-columns: repeat(1, 1fr); /* 1 card in a row on very small screens */
   }
 }
